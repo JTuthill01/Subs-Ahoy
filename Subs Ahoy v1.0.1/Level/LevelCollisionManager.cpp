@@ -519,7 +519,7 @@ void LevelCollisionManager::minePickupUpdate(Player* player, float& deltaTime)
 	{
 		if (Collision::BoundingBoxTest(player->getPlayerSprite(), mMinePickUps[i].getPickupSprite()))
 		{
-			mRemovePickup = true;
+			mRemoveMinePickup = true;
 
 			int health = 5;
 
